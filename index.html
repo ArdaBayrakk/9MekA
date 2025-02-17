@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9 Mek A</title>
+    <style>
+        body {
+            background-color: green;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .gallery {
+            display: block;
+            overflow-y: auto;
+            padding: 20px 0;
+            margin: 0;
+            height: 100vh;
+        }
+        .gallery img {
+            width: 80%;
+            max-width: 600px;
+            margin: 10px auto;
+            border-radius: 10px;
+            display: block;
+        }
+        .fixtures {
+            margin: 20px 0;
+        }
+        .fixture {
+            margin: 10px 0;
+        }
+        .formation {
+            margin: 20px;
+            font-size: 18px;
+            text-align: left;
+        }
+        a {
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer {
+            margin-top: 20px;
+        }
+        .field {
+            position: relative;
+            width: 400px;
+            height: 250px;
+            background-color: #008000;
+            border-radius: 10px;
+            margin: 20px auto;
+        }
+        .center-circle {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: white;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .player {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: white;
+            text-align: center;
+            line-height: 30px;
+            font-size: 12px;
+        }
+        .goalkeeper {
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .defender1 {
+            top: 30%;
+            left: 20%;
+        }
+        .defender2 {
+            top: 30%;
+            left: 80%;
+        }
+        .midfielder {
+            top: 60%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .forward1 {
+            top: 80%;
+            left: 25%;
+        }
+        .forward2 {
+            top: 80%;
+            left: 75%;
+        }
+        a {
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>9 Mek A</h1>
+
+    <div class="gallery">
+        <img src="a1.jpg" alt="Fotoğraf 1">
+        <img src="a2.jpg" alt="Fotoğraf 2">
+        <img src="a3.jpg" alt="Fotoğraf 3">
+        <img src="a4.jpg" alt="Fotoğraf 4">
+        <img src="a5.jpg" alt="Fotoğraf 5">
+        <img src="a6.jpg" alt="Fotoğraf 6">
+    </div>
+
+    <div class="fixtures">
+        <h2>Fikstür</h2>
+        <div class="fixture">
+            <p>1. Maç: 9 Mek A 4-1 9 Makine G</p>
+        </div>
+        <div class="fixture">
+            <p>2. Maç: 9 Mek A 2-0 9 Elektrik G</p>
+        </div>
+        <div class="fixture">
+            <p>3. Maç: Oynandığı zaman yazılacak</p>
+        </div>
+    </div>
+
+    <div class="formation">
+        <h3>Diziliş</h3>
+        <div class="field">
+            <div class="center-circle"></div>
+            <div class="player goalkeeper">Arda</div>
+            <div class="player defender1">Çağan</div>
+            <div class="player defender2">Ercü</div>
+            <div class="player midfielder">Saim</div>
+            <div class="player forward1">Mami</div>
+            <div class="player forward2">Mert</div>
+        </div>
+    </div>
+
+    <footer>
+        <p>By <a href="https://instagram.com/ardaa.b7" target="_blank">ArdaBayrak</a></p>
+    </footer>
+</body>
+</html>
