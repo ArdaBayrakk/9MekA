@@ -26,6 +26,10 @@
             margin: 10px auto;
             border-radius: 10px;
             display: block;
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
         }
         .fixtures {
             margin: 20px 0;
@@ -46,64 +50,10 @@
         footer {
             margin-top: 20px;
         }
-        .field {
-            position: relative;
-            width: 400px;
-            height: 250px;
-            background-color: #008000;
-            border-radius: 10px;
-            margin: 20px auto;
-        }
-        .center-circle {
+        .footer-text {
             position: absolute;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            background-color: white;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        .player {
-            position: absolute;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            background-color: white;
-            text-align: center;
-            line-height: 30px;
-            font-size: 12px;
-        }
-        .goalkeeper {
-            top: 10%;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        .defender1 {
-            top: 30%;
-            left: 20%;
-        }
-        .defender2 {
-            top: 30%;
-            left: 80%;
-        }
-        .midfielder {
-            top: 60%;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        .forward1 {
-            top: 80%;
-            left: 25%;
-        }
-        .forward2 {
-            top: 80%;
-            left: 75%;
-        }
-        a {
-            color: blue;
-            text-decoration: none;
-            font-weight: bold;
+            top: 20px;
+            right: 20px;
         }
     </style>
 </head>
@@ -134,19 +84,16 @@
 
     <div class="formation">
         <h3>Diziliş</h3>
-        <div class="field">
-            <div class="center-circle"></div>
-            <div class="player goalkeeper">Arda</div>
-            <div class="player defender1">Çağan</div>
-            <div class="player defender2">Ercü</div>
-            <div class="player midfielder">Saim</div>
-            <div class="player forward1">Mami</div>
-            <div class="player forward2">Mert</div>
-        </div>
+        <p><strong>Kaleci:</strong> Arda</p>
+        <p><strong>Defans:</strong> Çağan, Ercü</p>
+        <p><strong>Orta saha:</strong> Saim</p>
+        <p><strong>Sol Forvet:</strong> Mami</p>
+        <p><strong>Sağ Forvet:</strong> Mert (Ayaksız)</p>
     </div>
 
     <footer>
-        <p>By <a href="https://instagram.com/ardaa.b7" target="_blank">ArdaBayrak</a></p>
+        <p class="footer-text">By <a href="https://instagram.com/ardaa.b7" target="_blank">ArdaBayrak</a></p>
     </footer>
 </body>
 </html>
+
